@@ -1,4 +1,4 @@
-# Simulation Quantique - BMV V3.1
+# Simulation Quantique - BMV v1
 
 ## Description
 
@@ -111,6 +111,7 @@ Le code utilise une graine aléatoire fixe (`np.random.seed(42)`) pour garantir 
 - `bmv_v3_1_success.png` : Graphique du spectre de bruit avec le seuil de détection
 
 ## Version
+
 
 
 
