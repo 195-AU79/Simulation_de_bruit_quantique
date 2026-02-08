@@ -19,13 +19,27 @@ Valider qu'une masse inertielle de **250 mg** à une température de **10 mK** p
 
 ## Modèle Physique
 
-La simulation prend en compte trois sources de bruit principales :
+La simulation repose sur une approche hybride temporelle/spectrale intégrant trois étages d'isolation :
 
-1. **Bruit de sol** : Bruit blanc filtré par un filtre passe-bas de 0.1 Hz
-2. **Atténuation mécanique** : Simulation d'un étage pendulaire + métamatériau avec une atténuation effective de -180 dB
-3. **Bruit thermique (Langevin)** : Agitation thermique calculée selon la formule de fluctuation-dissipation
+1. Étage Sismique (Super-Atténuateur) :
 
-Le système utilise un piège optique mou à 0.2 Hz avec un facteur de qualité Q = 10¹⁰ (vide extrême).
+Modélisation : Filtres actifs/passifs (Pendules inversés).
+
+Atténuation : Filtrage du bruit de sol (Bruit Rose) et des harmoniques industrielles (50Hz).
+
+2. Étage Acoustique (Métamatériau) :
+
+Modélisation : Fonction de transfert effective.
+
+Performance : Atténuation structurelle cumulée de -180 dB.
+
+3. Étage Thermique (Lévitation Supraconductrice) :
+
+Modélisation : Dynamique de Langevin (Stochastique).
+
+Physique : Application du Théorème Fluctuation-Dissipation.
+
+Note : C'est l'étage critique où l'inertie de 250mg est nécessaire pour "écraser" l'agitation brownienne résiduelle.
 
 ## Installation
 
@@ -97,6 +111,7 @@ Le code utilise une graine aléatoire fixe (`np.random.seed(42)`) pour garantir 
 - `bmv_v3_1_success.png` : Graphique du spectre de bruit avec le seuil de détection
 
 ## Version
+
 
 
 
