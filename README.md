@@ -106,6 +106,4 @@ Le code utilise une graine aléatoire fixe (`np.random.seed(42)`) pour garantir 
 
 Projet BMV - Simulation Quantique
 
-## Licence
 
-[À compléter selon vos besoins]
