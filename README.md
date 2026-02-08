@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce projet implémente une simulation de bruit quantique pour le projet BMV (Bragg Mirror Vibration). La simulation calcule le bruit d'accélération résiduel d'un système de mesure ultra-sensible, en tenant compte du bruit de sol, de l'atténuation mécanique et du bruit thermique (Langevin).
+Ce projet implémente une simulation de bruit quantique pour le projet BMV (Birefringence Magnétique du Vide). La simulation calcule le bruit d'accélération résiduel d'un système de mesure ultra-sensible, en tenant compte du bruit de sol, de l'atténuation mécanique et du bruit thermique (Langevin).
 
 ## Objectif
 
@@ -111,6 +111,7 @@ Le code utilise une graine aléatoire fixe (`np.random.seed(42)`) pour garantir 
 - `bmv_v3_1_success.png` : Graphique du spectre de bruit avec le seuil de détection
 
 ## Version
+
 
 
 
