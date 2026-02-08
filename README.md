@@ -98,12 +98,5 @@ Le code utilise une graine aléatoire fixe (`np.random.seed(42)`) pour garantir 
 
 ## Version
 
-**V3.1** - Validation finale
-- Label "Seuil Graviton" remplacé par "Seuil"
-- Validation de l'inertie de 250mg pour atteindre < 1e-15
-
-## Auteur
-
-Projet BMV - Simulation Quantique
 
 
